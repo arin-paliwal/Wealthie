@@ -12,10 +12,12 @@ const Navbar = (props: Props) => {
   const [selected, setSelected] = useState("dashboard");
   return (
     <FlexBetween mb="0.25rem" p="0.5rem 0rem" color={palette.grey[300]}>
+      {/* left side */}
+
       <FlexBetween gap="0.75rem">
         <CurrencyRupeeIcon sx={{ fontSize: "20px" }} />
         <Typography variant="h4" fontSize="16px">
-          Welthie
+          welthie
         </Typography>
       </FlexBetween>
 
