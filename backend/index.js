@@ -5,7 +5,7 @@ import cors from "cors";
 import dotenv from "dotenv"
 import morgan from "morgan";
 import helmet from "helmet";
-
+import kpiRoutes from "./routes/kpi.js"
 // Configurations
 dotenv.config();
 const app = express();
@@ -16,6 +16,11 @@ app.use(morgan("common"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
+
+
+// routes
+
+app.use("/kpi",kpiRoutes);
 
 // console.log("hello");
 
