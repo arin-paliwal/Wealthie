@@ -20,6 +20,7 @@ app.use(cors());
 // console.log("hello");
 
 const PORT = process.env.PORT || 9000;
+// mongoose setup
 mongoose
 .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
